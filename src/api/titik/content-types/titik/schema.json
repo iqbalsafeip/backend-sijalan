@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "titiks",
+  "info": {
+    "singularName": "titik",
+    "pluralName": "titiks",
+    "displayName": "titik",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "jalan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jalan.jalan",
+      "inversedBy": "titiks"
+    },
+    "color": {
+      "type": "string"
+    },
+    "titik_awal": {
+      "type": "json"
+    },
+    "titik_akhir": {
+      "type": "json"
+    }
+  }
+}

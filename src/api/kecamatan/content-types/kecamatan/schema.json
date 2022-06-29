@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kecamatans",
+  "info": {
+    "singularName": "kecamatan",
+    "pluralName": "kecamatans",
+    "displayName": "kecamatan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_kecamatan": {
+      "type": "string"
+    }
+  }
+}

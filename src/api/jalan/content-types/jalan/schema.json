@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jalans",
+  "info": {
+    "singularName": "jalan",
+    "pluralName": "jalans",
+    "displayName": "Jalan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_jalan": {
+      "type": "text"
+    },
+    "panjang": {
+      "type": "string"
+    },
+    "lebar": {
+      "type": "string"
+    },
+    "aspal": {
+      "type": "string"
+    },
+    "perkerasan_beton": {
+      "type": "string"
+    },
+    "lapis_penetrasi": {
+      "type": "string"
+    },
+    "telford": {
+      "type": "string"
+    },
+    "tanah": {
+      "type": "string"
+    },
+    "baik": {
+      "type": "string"
+    },
+    "sedang": {
+      "type": "string"
+    },
+    "rusak_ringan": {
+      "type": "string"
+    },
+    "rusak_berat": {
+      "type": "string"
+    },
+    "kecamatan_dilalui": {
+      "type": "string"
+    },
+    "kode_ruas": {
+      "type": "string"
+    },
+    "titiks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::titik.titik",
+      "mappedBy": "jalan"
+    },
+    "gambar_jalan": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "kecamatan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kecamatan.kecamatan"
+    }
+  }
+}
