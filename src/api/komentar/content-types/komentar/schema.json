@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "komentars",
+  "info": {
+    "singularName": "komentar",
+    "pluralName": "komentars",
+    "displayName": "komentar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "konten": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "komentars"
+    },
+    "jalan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jalan.jalan",
+      "inversedBy": "komentars"
+    }
+  }
+}

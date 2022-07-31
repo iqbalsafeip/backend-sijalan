@@ -75,6 +75,18 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::kecamatan.kecamatan"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "komentars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::komentar.komentar",
+      "mappedBy": "jalan"
     }
   }
 }

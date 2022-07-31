@@ -71,6 +71,12 @@
     },
     "alamat": {
       "type": "string"
+    },
+    "komentars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::komentar.komentar",
+      "mappedBy": "user"
     }
   }
 }
